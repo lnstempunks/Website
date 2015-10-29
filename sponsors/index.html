@@ -1,638 +1,820 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
-<meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
-<meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966">
-<link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg"/>
-<title>Sponsors - L&amp;N STEMpunks</title>
-<link href="../resources/bootstrap.css" rel=stylesheet>
-<link href="../resources/responsive-video.css" rel=stylesheet>
-<link href="../resources/style.css" rel=stylesheet>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
-<link href="../resources/fa/css/font-awesome.min.css" rel=stylesheet>
-<link rel="apple-touch-icon" sizes="57x57" href="../RESOURCES/apple-touch-icon-57x57.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="60x60" href="../RESOURCES/apple-touch-icon-60x60.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="72x72" href="../RESOURCES/apple-touch-icon-72x72.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="76x76" href="../RESOURCES/apple-touch-icon-76x76.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="114x114" href="../RESOURCES/apple-touch-icon-114x114.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="120x120" href="../RESOURCES/apple-touch-icon-120x120.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="144x144" href="../RESOURCES/apple-touch-icon-144x144.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="152x152" href="../RESOURCES/apple-touch-icon-152x152.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="180x180" href="../RESOURCES/apple-touch-icon-180x180.png?v=Gvvken2kmv">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
-<link rel="icon" type="image/png" href="../RESOURCES/android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
-<link rel="manifest" href="../RESOURCES/manifest.json?v=Gvvken2kmv">
-<link rel="shortcut icon" href="../RESOURCES/favicon.ico?v=Gvvken2kmv">
-<meta name="apple-mobile-web-app-title" content="L&N STEMpunks - Sponsors">
-<meta name="application-name" content="L&N STEMpunks - Sponsors">
-<meta name="msapplication-TileColor" content="#0a6118">
-<meta name="msapplication-TileImage" content="../RESOURCES/mstile-144x144.png?v=Gvvken2kmv">
-<meta name="msapplication-config" content="../RESOURCES/browserconfig.xml?v=Gvvken2kmv">
-<meta name="theme-color" content="#0a6118">
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-47780525-1','lnstempunks.org');ga('send','pageview');</script>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
+  <meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
+  <meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966">
+  <link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg" />
+  <title>Sponsors - L&amp;N STEMpunks</title>
+  <link href="../resources/bootstrap.css" rel=stylesheet>
+  <link href="../resources/responsive-video.css" rel=stylesheet>
+  <link href="../resources/style.css" rel=stylesheet>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
+  <link href="../resources/fa/css/font-awesome.min.css" rel=stylesheet>
+  <link rel="apple-touch-icon" sizes="57x57" href="../RESOURCES/apple-touch-icon-57x57.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="60x60" href="../RESOURCES/apple-touch-icon-60x60.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="72x72" href="../RESOURCES/apple-touch-icon-72x72.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="76x76" href="../RESOURCES/apple-touch-icon-76x76.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="114x114" href="../RESOURCES/apple-touch-icon-114x114.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="120x120" href="../RESOURCES/apple-touch-icon-120x120.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="144x144" href="../RESOURCES/apple-touch-icon-144x144.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="152x152" href="../RESOURCES/apple-touch-icon-152x152.png?v=Gvvken2kmv">
+  <link rel="apple-touch-icon" sizes="180x180" href="../RESOURCES/apple-touch-icon-180x180.png?v=Gvvken2kmv">
+  <link rel="icon" type="image/png" href="../RESOURCES/favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
+  <link rel="icon" type="image/png" href="../RESOURCES/android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
+  <link rel="icon" type="image/png" href="../RESOURCES/favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
+  <link rel="icon" type="image/png" href="../RESOURCES/favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
+  <link rel="manifest" href="../RESOURCES/manifest.json?v=Gvvken2kmv">
+  <link rel="shortcut icon" href="../RESOURCES/favicon.ico?v=Gvvken2kmv">
+  <meta name="apple-mobile-web-app-title" content="L&N STEMpunks - Sponsors">
+  <meta name="application-name" content="L&N STEMpunks - Sponsors">
+  <meta name="msapplication-TileColor" content="#0a6118">
+  <meta name="msapplication-TileImage" content="../RESOURCES/mstile-144x144.png?v=Gvvken2kmv">
+  <meta name="msapplication-config" content="../RESOURCES/browserconfig.xml?v=Gvvken2kmv">
+  <meta name="theme-color" content="#0a6118">
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-47780525-1', 'lnstempunks.org');
+    ga('send', 'pageview');
+  </script>
 </head>
+
 <body class=blue>
-<div class=bg>
-<div id=carousel class="carousel slide">
-<div class=carousel-inner>
-<img id=bg>
-</div>
-<div class=gradient></div>
-</div>
-</div>
-<div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
-<div class=container>
-<div class=navbar-header>
-<button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
-<a class=navbar-brand href="../"><img src="../resources/logo.png"></a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li><a href="../">HOME</a></li>
-<li><a href="../about">ABOUT US</a></li>
-<li><a href="../first">FIRST</a></li>
-<li><a href="../media">MEDIA</a></li>
-<li><a class=active href="../sponsors">SPONSORS</a></li>
-<li><a href="../contact">CONTACT</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id=home class="section clear">
-<div class=wrapper>
-<div class=row>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-8 col-sm-8 col-xs-12">
-<h1 class=welcome>Sponsors</h1>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-</div>
-</div>
-<div class=container>
-<table class=nav-tabs cellspacing=0>
-<tr>
-<td><a class=active href="#sponsors" data-toggle=tab>SPONSORS</a></td>
-<td><a name=friends href="#school" data-toggle=tab>SCHOOL</a></td>
-<td><a name=friends href="#friends" data-toggle=tab>FRIENDS</a></td>
-<td><a name=donate href="#donate" data-toggle=tab>DONATE</a></td>
-<td><a name=bcsponsor href="#bcsponsor" data-toggle=tab>SPONSOR US</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class=tab-content>
-<div class="tab-pane active slide-left in" id=sponsors>
-<div id=pricing class="section clear">
-<div class=container>
-<div class=content>
-<div class="row single vcontainer">
-<div class=wrapper>
-<div class=text-center>
-<h2 class=title></i>DIAMOND<h2>
-</div>
-</div>
-</div>
-<div class="col-md-12 col-sm-12 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://henryandwallace.com" target=_blank><img class=img-responsive src="sponsors/h&w.png"></a></center>
-</div>
-<h3 class=text-center>Henry & Wallace</h3>
-<p class=text-center>Henry & Wallace are a realty and property development company based in downtown Knoxville, Tennessee.</p>
-</div>
-</div>
-</div>
-<div class="container gray">
-<div class=content>
-<div class="row single vcontainer">
-<div class=wrapper>
-<div class=text-center>
-<h2 class=title></i>PLATINUM<h2>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://bechtel.com" target=_blank><img class=img-responsive src="sponsors/bechtel.png"></a></center>
-</div>
-<h3 class=text-center>Bechtel</h3>
-<p class=text-center>Bechtel is a construction and civil engineering company located in Oak Ridge, Tennessee.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://knoxschools.org/" target=_blank><img class=img-responsive src="sponsors/knoxcounty.png"></a></center>
-</div>
-<h3 class=text-center>Knox County Schools</h3>
-<p class=text-center>Knox County Schools is the school district that operates all public schools in Knox County, Tennessee.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://ut-battelle.org" target=_blank><img class=img-responsive src="sponsors/utb.png"></a></center>
-</div>
-<h3 class=text-center>UT-Battelle</h3>
-<p class=text-center>The University of Tennessee and Battelle operate Oak Ridge National Laboratory.</p>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="row single vcontainer">
-<div class=wrapper>
-<div class=text-center>
-<h2 class=title></i>GOLD<h2>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://alcoa.com" target=_blank><img class=img-responsive src="sponsors/alcoa.png"></a></center>
-</div>
-<h3 class=text-center>Alcoa</h3>
-<p class=text-center>Alcoa produces lightweight metals and is the third largest producer of aluminum in the world.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://claytonhomes.com" target=_blank><img class=img-responsive src="sponsors/clayton.png"></a></center>
-</div>
-<h3 class=text-center>Clayton Homes</h3>
-<p class=text-center>Clayton Homes manufactures affordable modular and mobile homes.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://cns-llc.us/" target=_blank><img class=img-responsive src="sponsors/cns.png"></a></center>
-</div>
-<h3 class=text-center>Consolidated Nuclear Security</h3>
-<p class=text-center>Consolidated Nuclear Security operates the Y-12 National Security Complex.</p>
-</div>
-</div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="row single vcontainer">
-<div class=wrapper>
-<div class=text-center>
-<h2 class=title></i>SILVER<h2>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://www.3ds.com/" target=_blank><img class=img-responsive src="sponsors/3ds.png"></a></center>
-</div>
-<h3 class=text-center>Dassault Systèmes</h3>
-<p class=text-center>Dassault Systèmes provides advanced 3D design solutions with software like SOLIDWORKS.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://dkdkgoose.com/knoxville/" target=_blank><img class=img-responsive src="sponsors/ddg.png"></a></center>
-</div>
-<h3 class=text-center>Duck Duck Goose</h3>
-<p class=text-center>Duck Duck Goose is Knoxville's premier children's consignment event.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://www.iiaweb.com" target=_blank><img class=img-responsive src="sponsors/iia.png"></a></center>
-</div>
-<h3 class=text-center>Information International Associates</h3>
-<p class=text-center>IIA specializes in information technology and knowledge management. </p>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="row single vcontainer">
-<div class=wrapper>
-<div class=text-center>
-<h2 class=title></i>BRONZE<h2>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://knoxvillebrew.com" target=_blank><img class=img-responsive src="sponsors/kbrew.png"></a></center>
-</div>
-<h3 class=text-center>Knoxville Brew</h3>
-<p class=text-center>Knoxville Brew is a new and fast growing coffee shop in Old North Knoxville.</p>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://gloriad.org" target=_blank><img class=img-responsive src="sponsors/gloriad.png"></a></center>
-</div>
-<h3 class=text-center>GLORIAD</h3>
-<p class=text-center>The Global Ring Network for Advanced Applications Development connects educational institutions around the world.</p>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://drewgriggs.com" target=_blank><img class=img-responsive src="sponsors/dgsf.png"></a></center>
-</div>
-<h3 class=text-center>Drew Griggs</h3>
-<p class=text-center>Drew Griggs is a State Farm insurance agent in Knoxville, TN.</p>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="https://community.asme.org/east_tennessee_section/default.aspx" target=_blank><img class=img-responsive src="sponsors/asme.png"></a></center>
-</div>
-<h3 class=text-center>East Tennessee ASME</h3>
-<p class=text-center>The American Society of Mechanical Engineers works to promote engineering fields.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=school>
-<div id=services class="section clear">
-<div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#sschool">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-shield"></span>SCHOOL</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-8 col-sm-8 col-xs-12">
-<p class=description>
-</p>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div id=sschool class="collapse in">
-<div class="container gray">
-<div class="arrow-down centered"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="../resources/school.jpg">
-<div class=clearfix></div>
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<h3>L&N STEM Academy</h3>
-<p>The L&N STEM Academy was founded in 2011 as a magnet high school focused on the disciplines of science, technology, engineering, and math in the Knox County School system. The school began with Freshman and Sophomore classes, expanding each year to have the first graduating class in 2013-14. The academic program is based on full-year classes, where the maximum course load is 8 simultaneous credits. An integrated curriculum and project-based instruction is made possible by the 1:1 technology implemented throughout the academy. </p>
-<div class=social-media>
-<a href="https://twitter.com/LNSTEMAC" target=_blank><i class="fa fa-twitter"></i></a>
-<a href="https://www.facebook.com/LNSTEMAC" target=_blank><i class="fa fa-facebook"></i></a>
-<a href="https://knoxschools.org/landn" target=_blank><i class="fa fa-globe"></i></a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-</div>
-<div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#principal">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-bullhorn"></span>PRINCIPAL</h2>
-</div>
-</div>
-<div id=principal class="collapse in">
-<div class="container gray">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="row single">
-<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
-<div class=portrait-wrapper>
-<img class="portrait slide-in" src="people/ashe.jpg">
-</div>
-</div>
-<div class="col-md-8 col-sm-6 col-xs-12 pull-right">
-<div class=wrapper>
-<h3>Becky Ashe</h3>
-<p>Becky Ashe is the founding principal of the L&N STEM Academy. Since it's founding, the L&N STEM Academy has grown from under 200 students to 600 from multiple East Tennessee counties, and has been listed as the 12th best high school in the state of Tennessee.</p>
-<p><i>Principal since 2011</i></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=friends>
-<div id=services class="section clear">
-<div class="container  single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-heart"></span>FRIENDS</h2>
-</div>
-</div>
-</div>
-<div id=pricing class="section clear">
-<div class="container gray">
-<div class=content>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://curent.utk.edu" target=_blank><img class=img-responsive src="friends/curent.png"></a></center>
-<br>
-<h3 class=text-center>CURENT</h3>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://knoxvilleicebears.com" target=_blank><img class=img-responsive src="friends/icebears.png"></a></center>
-<br>
-<h3 class=text-center>Knoxville Ice Bears</h3>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<br>
-<center><a href="http://themuseknoxville.org" target=_blank><img class=img-responsive src="friends/muse.png"></a></center>
-<h3 class=text-center>The Muse Knoxville</h3>
-</div>
-</div>
-</div>
-</div>
-<div class=container>
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://paulkandco.com" target=_blank><img class=img-responsive src="friends/paulk.png"></a></center>
-<br>
-<h3 class=text-center>Paulk and Co</h3>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://987newstalk.com" target=_blank><img class=img-responsive src="friends/987.png"></a></center>
-<br>
-<h3 class=text-center>98.7 NewsTalk</h3>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://www.shadesofdevelopment.org/" target=_blank><img class=img-responsive src="friends/shades.png"></a></center>
-<br>
-<h3 class=text-center>Shades of Development</h3>
-</div>
-</div>
-</div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="http://visitknoxville.com" target=_blank><img class=img-responsive src="friends/vk.png"></a></center>
-<br>
-<h3 class=text-center>Visit Knoxville</h3>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=portrait-wrapper>
-<center><a href="https://knoxmakers.org/" target=_blank><img class=img-responsive src="friends/makers.png"></a></center>
-<br>
-<h3 class=text-center>Knox Makers</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=donate>
-<div id=services class="section clear">
-<div class="container single">
-<div class=content>
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-dollar"></span>DONATIONS</h2>
-</div>
-<div class=row>
-</div>
-</div>
-</div>
-<div class="container gray">
-<div class=content>
-<br/><br/><br/>
-<div class=pricing>
-<div class=row>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-circle-o"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>$5</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=VKG6A2N2X366A" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-dot-circle-o"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>$15</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DSA7QLDB7U276" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-circle"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>$25</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=B4Q7C6U8Z828S" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class=clearfix></div>
-</div>
-</div>
-</div>
-</div>
-<div class="container gray">
-<div class=pricing>
-<div class=row>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-star-o"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>$50</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RHWZG8CKGU924" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-star-half-o"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>$100</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=EPX8GKTRTZKYC" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center><span class="fa fa-star"></span></h3>
-<table class=table>
-<thead>
-<tr><th><span class=price>CUSTOM</span></th></tr>
-</thead>
-<tbody>
-<tr><td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NTKMLUE8TR86Y" target=_blank>DONATE NOW</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=bcsponsor>
-<div id=services class="section clear">
-<div class="container single">
-<div class=content>
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-money"></span>SPONSOR US</h2>
-</div>
-<div class=row>
-</div>
-</div>
-</div>
-</div>
-<div id=pricing class="section clear">
-<div class="container single gray">
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-4 col-xs-12 pull-right valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="bcsponsor/chart.jpg">
-<center><p><i>Our 2014-15 expenses.</i></p></center>
-</div>
-</div>
-<div class="col-md-5 col-sm-6 col-xs-12 pull-right valign">
-<div class=wrapper>
-<h3>Why Sponsor Us?</h3>
-<p>Our team relies on generous donations from local businesses to compete each year in the <a href="../first">FIRST Robotics Competition.</a> Our operating costs include competition fees, buying shirts and costumes, transportation, and much more. By sponsoring our team, you are enabling the next generation of engineers and scientists.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-<div class="container single">
-<div class="arrow-down centered inner-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="bcsponsor/shirt.jpg">
-<center><p><i>Sponsors on our 2014 shirt.</i></p></center>
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign">
-<div class=wrapper>
-<h3>How Does It Benefit You?</h3>
-<p>Depending on your sponsorship level, our team has different ways to show our appreciate for your generous sponsorship of our team. These options include: your company logo on our t-shirt, website and robot, personalized thank-you cards, 3D printed paperweights, and more. You can read more about sponsorship levels below.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container single gray">
-<div class="arrow-down centered inner-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 pull-right valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="bcsponsor/parade.jpg">
-<center><p><i>Our team in the Veteran's Day Parade.</i></p></center>
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 pull-right valign">
-<div class=wrapper>
-<h3>Sponsorship Levels</h3>
-<p>We offer four tiers of sponsorships; Bronze, Silver, Gold and Platinum. Each level is based on your donation amount, either monetary or based on the value of the donation. Each level offers different benefits for your company. Bronze sponsorship is a $50-$250 contribution, silver is a $250-$500 contribution, gold is a $500-$1500 contribution, and platinum is a $1500 or higher contribution.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-<div class="container single">
-<div class="arrow-down centered inner-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="bcsponsor/kishan.jpg">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign">
-<div class=wrapper>
-<h3>Contact Us!</h3>
-<p>Please get in touch with us directly to start the sponsorship process. Our finance team should reply promptly.</p>
-<p><i><a href="mailto:kishan@lnstempunks.org">kishan@lnstempunks.org</a></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section bottom clear">
-<div class="container clear">
-<div class="arrow-down centered"></div>
-</div>
-</div>
-<div id=footer class=section>
-<div class=container>
-<div class=row>
-<div class="col-md-5 col-sm-5 col-xs-12">
-<a class="logo clearfix" href="#"><img class=img-responsive src="../resources/logo.png"></a><br/>
-<p class="pull-left clearfix tagline">Get STEMpunked!</p>
-<div class=clearfix></div>
-<p>We're students from the L&N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Social</h3>
-<ul>
-<li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
-<li><a href="https://www.facebook.com/LNRobotics" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
-<li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
-<li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
-<li><a href="http://flickr.com/lnstempunks" target=_blank><i class="fa fa-flickr"></i> Flickr</a></li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Other</h3>
-<ul>
-<li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
-<li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
-<li><a href="../legal">Legal</a></li>
-<li><a href="#"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<script src="../resources/jquery-1.9.1.min.js"></script>
-<script src="../resources/jquery.mixitup.min.js"></script>
-<script src="../resources/masonry.pkgd.min.js"></script>
-<script src="../resources/imagesloaded.pkgd.min.js"></script>
-<script src="../resources/bootstrap.min.js"></script>
-<script src="../resources/init.js"></script>
-<script>var $buoop={};$buoop.ol=window.onload;window.onload=function(){try{if($buoop.ol)$buoop.ol();}catch(e){}
-var e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("src","//browser-update.org/update.js");document.body.appendChild(e);}</script>
-<script>var images=new Array('../RESOURCES/background1.jpg','../RESOURCES/background2.jpg','../RESOURCES/background3.jpg');var l=images.length;var random_no=Math.floor(l*Math.random());document.getElementById("bg").src=images[random_no];</script>
+  <div class=bg>
+    <div id=carousel class="carousel slide">
+      <div class=carousel-inner>
+        <img id=bg>
+      </div>
+      <div class=gradient></div>
+    </div>
+  </div>
+  <div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
+    <div class=container>
+      <div class=navbar-header>
+        <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+          <span class=icon-bar></span>
+          <span class=icon-bar></span>
+          <span class=icon-bar></span>
+        </button>
+        <a class=navbar-brand href="../">
+          <img src="../resources/logo.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../">HOME</a></li>
+          <li><a href="../about">ABOUT US</a></li>
+          <li><a href="../first">FIRST</a></li>
+          <li><a href="../media">MEDIA</a></li>
+          <li><a class=active href="../sponsors">SPONSORS</a></li>
+          <li><a href="../contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id=home class="section clear">
+    <div class=wrapper>
+      <div class=row>
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <h1 class=welcome>Sponsors</h1>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+      </div>
+    </div>
+  </div>
+  <div class=container>
+    <table class=nav-tabs cellspacing=0>
+      <tr>
+        <td><a class=active href="#sponsors" data-toggle=tab>SPONSORS</a></td>
+        <td><a name=friends href="#school" data-toggle=tab>SCHOOL</a></td>
+        <td><a name=friends href="#friends" data-toggle=tab>FRIENDS</a></td>
+        <td><a name=donate href="#donate" data-toggle=tab>DONATE</a></td>
+        <td><a name=bcsponsor href="#bcsponsor" data-toggle=tab>SPONSOR US</a></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+  <div class=tab-content>
+    <div class="tab-pane active slide-left in" id=sponsors>
+      <div id=pricing class="section clear">
+        <div class=container>
+          <div class=content>
+            <div class="row single vcontainer">
+              <div class=wrapper>
+                <div class=text-center>
+                  <h2 class=title>
+                    </i>DIAMOND
+                    <h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://henryandwallace.com" target=_blank>
+                    <img class=img-responsive src="sponsors/h&w.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Henry & Wallace</h3>
+              <p class=text-center>Henry & Wallace are a realty and property development company based in downtown Knoxville, Tennessee.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container gray">
+          <div class=content>
+            <div class="row single vcontainer">
+              <div class=wrapper>
+                <div class=text-center>
+                  <h2 class=title>
+                    </i>PLATINUM
+                    <h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://bechtel.com" target=_blank>
+                    <img class=img-responsive src="sponsors/bechtel.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Bechtel</h3>
+              <p class=text-center>Bechtel is a construction and civil engineering company located in Oak Ridge, Tennessee.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://knoxschools.org/" target=_blank>
+                    <img class=img-responsive src="sponsors/knoxcounty.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Knox County Schools</h3>
+              <p class=text-center>Knox County Schools is the school district that operates all public schools in Knox County, Tennessee.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://ut-battelle.org" target=_blank>
+                    <img class=img-responsive src="sponsors/utb.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>UT-Battelle</h3>
+              <p class=text-center>The University of Tennessee and Battelle operate Oak Ridge National Laboratory.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="arrow-down centered"></div>
+          <div class=content>
+            <div class="row single vcontainer">
+              <div class=wrapper>
+                <div class=text-center>
+                  <h2 class=title>
+                    </i>GOLD
+                    <h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://alcoa.com" target=_blank>
+                    <img class=img-responsive src="sponsors/alcoa.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Alcoa</h3>
+              <p class=text-center>Alcoa produces lightweight metals and is the third largest producer of aluminum in the world.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://claytonhomes.com" target=_blank>
+                    <img class=img-responsive src="sponsors/clayton.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Clayton Homes</h3>
+              <p class=text-center>Clayton Homes manufactures affordable modular and mobile homes.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://cns-llc.us/" target=_blank>
+                    <img class=img-responsive src="sponsors/cns.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Consolidated Nuclear Security</h3>
+              <p class=text-center>Consolidated Nuclear Security operates the Y-12 National Security Complex.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container gray">
+          <div class="arrow-down centered"></div>
+          <div class=content>
+            <div class="row single vcontainer">
+              <div class=wrapper>
+                <div class=text-center>
+                  <h2 class=title>
+                    </i>SILVER
+                    <h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://www.3ds.com/" target=_blank>
+                    <img class=img-responsive src="sponsors/3ds.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Dassault Systèmes</h3>
+              <p class=text-center>Dassault Systèmes provides advanced 3D design solutions with software like SOLIDWORKS.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://dkdkgoose.com/knoxville/" target=_blank>
+                    <img class=img-responsive src="sponsors/ddg.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Duck Duck Goose</h3>
+              <p class=text-center>Duck Duck Goose is Knoxville's premier children's consignment event.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://www.iiaweb.com" target=_blank>
+                    <img class=img-responsive src="sponsors/iia.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Information International Associates</h3>
+              <p class=text-center>IIA specializes in information technology and knowledge management. </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="arrow-down centered"></div>
+          <div class=content>
+            <div class="row single vcontainer">
+              <div class=wrapper>
+                <div class=text-center>
+                  <h2 class=title>
+                    </i>BRONZE
+                    <h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://drewgriggs.com" target=_blank>
+                    <img class=img-responsive src="sponsors/dgsf.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>Drew Griggs</h3>
+              <p class=text-center>Drew Griggs is a State Farm insurance agent in Knoxville, TN.</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="https://community.asme.org/east_tennessee_section/default.aspx" target=_blank>
+                    <img class=img-responsive src="sponsors/asme.png">
+                  </a>
+                </center>
+              </div>
+              <h3 class=text-center>East Tennessee ASME</h3>
+              <p class=text-center>The American Society of Mechanical Engineers works to promote engineering fields.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=tab-pane id=school>
+      <div id=services class="section clear">
+        <div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#sschool">
+          <div class=text-center>
+            <h2 class="title single">
+              <span class="fa fa-shield"></span>SCHOOL</h2>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          <div class="col-md-8 col-sm-8 col-xs-12">
+            <p class=description>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+        <div id=sschool class="collapse in">
+          <div class="container gray">
+            <div class="arrow-down centered"></div>
+            <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+            <div class="col-md-5 col-sm-5 col-xs-12 valign">
+              <div class=home-wrapper>
+                <img class=img-responsive src="../resources/school.jpg">
+                <div class=clearfix></div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12 valign">
+              <h3>L&N STEM Academy</h3>
+              <p>The L&N STEM Academy was founded in 2011 as a magnet high school focused on the disciplines of science, technology, engineering, and math in the Knox County School system. The school began with Freshman and Sophomore classes, expanding each
+                year to have the first graduating class in 2013-14. The academic program is based on full-year classes, where the maximum course load is 8 simultaneous credits. An integrated curriculum and project-based instruction is made possible by
+                the 1:1 technology implemented throughout the academy. </p>
+              <div class=social-media>
+                <a href="https://twitter.com/LNSTEMAC" target=_blank><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/LNSTEMAC" target=_blank><i class="fa fa-facebook"></i></a>
+                <a href="https://knoxschools.org/landn" target=_blank><i class="fa fa-globe"></i></a>
+              </div>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+          </div>
+        </div>
+        <div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#principal">
+          <div class=text-center>
+            <h2 class="title single">
+              <span class="fa fa-bullhorn"></span>PRINCIPAL</h2>
+          </div>
+        </div>
+        <div id=principal class="collapse in">
+          <div class="container gray">
+            <div class="arrow-down centered"></div>
+            <div class=content>
+              <div class="row single">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                  <div class=portrait-wrapper>
+                    <img class="portrait slide-in" src="people/ashe.jpg">
+                  </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12 pull-right">
+                  <div class=wrapper>
+                    <h3>Becky Ashe</h3>
+                    <p>Becky Ashe is the founding principal of the L&N STEM Academy. Since it's founding, the L&N STEM Academy has grown from under 200 students to 600 from multiple East Tennessee counties, and has been listed as the 12th best high school
+                      in the state of Tennessee.</p>
+                    <p><i>Principal since 2011</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=tab-pane id=friends>
+      <div id=services class="section clear">
+        <div class="container  single">
+          <div class=text-center>
+            <h2 class="title single">
+              <span class="fa fa-heart"></span>FRIENDS</h2>
+          </div>
+        </div>
+      </div>
+      <div id=pricing class="section clear">
+        <div class="container gray">
+          <div class=content>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://curent.utk.edu" target=_blank>
+                    <img class=img-responsive src="friends/curent.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>CURENT</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://knoxvilleicebears.com" target=_blank>
+                    <img class=img-responsive src="friends/icebears.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>Knoxville Ice Bears</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <br>
+                <center>
+                  <a href="http://themuseknoxville.org" target=_blank>
+                    <img class=img-responsive src="friends/muse.png">
+                  </a>
+                </center>
+                <h3 class=text-center>The Muse Knoxville</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=container>
+          <div class="arrow-down centered"></div>
+          <div class=content>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://paulkandco.com" target=_blank>
+                    <img class=img-responsive src="friends/paulk.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>Paulk and Co</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://987newstalk.com" target=_blank>
+                    <img class=img-responsive src="friends/987.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>98.7 NewsTalk</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://www.shadesofdevelopment.org/" target=_blank>
+                    <img class=img-responsive src="friends/shades.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>Shades of Development</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container gray">
+          <div class="arrow-down centered"></div>
+          <div class=content>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="http://visitknoxville.com" target=_blank>
+                    <img class=img-responsive src="friends/vk.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>Visit Knoxville</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class=portrait-wrapper>
+                <center>
+                  <a href="https://knoxmakers.org/" target=_blank>
+                    <img class=img-responsive src="friends/makers.png">
+                  </a>
+                </center>
+                <br>
+                <h3 class=text-center>Knox Makers</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=tab-pane id=donate>
+      <div id=services class="section clear">
+        <div class="container single">
+          <div class=content>
+            <div class=text-center>
+              <h2 class="title single">
+                <span class="fa fa-dollar"></span>DONATIONS</h2>
+            </div>
+            <div class=row>
+            </div>
+          </div>
+        </div>
+        <div class="container gray">
+          <div class=content>
+            <br/>
+            <br/>
+            <br/>
+            <div class=pricing>
+              <div class=row>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class=wrapper>
+                    <h3 class=text-center>
+                      <span class="fa fa-circle-o"></span>
+                    </h3>
+                    <table class=table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <span class=price>$5</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=VKG6A2N2X366A" target=_blank>DONATE NOW</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class=wrapper>
+                    <h3 class=text-center>
+                      <span class="fa fa-dot-circle-o"></span>
+                    </h3>
+                    <table class=table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <span class=price>$15</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DSA7QLDB7U276" target=_blank>DONATE NOW</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class=wrapper>
+                    <h3 class=text-center>
+                      <span class="fa fa-circle"></span>
+                    </h3>
+                    <table class=table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <span class=price>$25</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=B4Q7C6U8Z828S" target=_blank>DONATE NOW</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class=clearfix></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container gray">
+          <div class=pricing>
+            <div class=row>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class=wrapper>
+                  <h3 class=text-center>
+                    <span class="fa fa-star-o"></span>
+                  </h3>
+                  <table class=table>
+                    <thead>
+                      <tr>
+                        <th>
+                          <span class=price>$50</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RHWZG8CKGU924" target=_blank>DONATE NOW</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class=wrapper>
+                  <h3 class=text-center>
+                    <span class="fa fa-star-half-o"></span>
+                  </h3>
+                  <table class=table>
+                    <thead>
+                      <tr>
+                        <th>
+                          <span class=price>$100</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=EPX8GKTRTZKYC" target=_blank>DONATE NOW</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class=wrapper>
+                  <h3 class=text-center>
+                    <span class="fa fa-star"></span>
+                  </h3>
+                  <table class=table>
+                    <thead>
+                      <tr>
+                        <th>
+                          <span class=price>CUSTOM</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a class=btn href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NTKMLUE8TR86Y" target=_blank>DONATE NOW</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=tab-pane id=bcsponsor>
+      <div id=services class="section clear">
+        <div class="container single">
+          <div class=content>
+            <div class=text-center>
+              <h2 class="title single">
+                <span class="fa fa-money"></span>SPONSOR US</h2>
+            </div>
+            <div class=row>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id=pricing class="section clear">
+        <div class="container single gray">
+          <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+          <div class="col-md-5 col-sm-4 col-xs-12 pull-right valign">
+            <div class=branding-wrapper>
+              <img class=img-responsive src="bcsponsor/chart.jpg">
+              <center>
+                <p><i>Our 2014-15 expenses.</i></p>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-6 col-xs-12 pull-right valign">
+            <div class=wrapper>
+              <h3>Why Sponsor Us?</h3>
+              <p>Our team relies on generous donations from local businesses to compete each year in the <a href="../first">FIRST Robotics Competition.</a> Our operating costs include competition fees, buying shirts and costumes, transportation, and much
+                more. By sponsoring our team, you are enabling the next generation of engineers and scientists.</p>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+        </div>
+        <div class="container single">
+          <div class="arrow-down centered inner-right"></div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 valign">
+            <div class=branding-wrapper>
+              <img class=img-responsive src="bcsponsor/shirt.jpg">
+              <center>
+                <p><i>Sponsors on our 2014 shirt.</i></p>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-xs-12 valign">
+            <div class=wrapper>
+              <h3>How Does It Benefit You?</h3>
+              <p>Depending on your sponsorship level, our team has different ways to show our appreciate for your generous sponsorship of our team. These options include: your company logo on our t-shirt, website and robot, personalized thank-you cards,
+                3D printed paperweights, and more. You can read more about sponsorship levels below.</p>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+        </div>
+        <div class="container single gray">
+          <div class="arrow-down centered inner-left"></div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 pull-right valign">
+            <div class=branding-wrapper>
+              <img class=img-responsive src="bcsponsor/parade.jpg">
+              <center>
+                <p><i>Our team in the Veteran's Day Parade.</i></p>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-xs-12 pull-right valign">
+            <div class=wrapper>
+              <h3>Sponsorship Levels</h3>
+              <p>We offer four tiers of sponsorships; Bronze, Silver, Gold and Platinum. Each level is based on your donation amount, either monetary or based on the value of the donation. Each level offers different benefits for your company. Bronze sponsorship
+                is a $50-$250 contribution, silver is a $250-$500 contribution, gold is a $500-$1500 contribution, and platinum is a $1500 or higher contribution.</p>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+        </div>
+        <div class="container single">
+          <div class="arrow-down centered inner-left"></div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 valign">
+            <div class=branding-wrapper>
+              <img class=img-responsive src="bcsponsor/kishan.jpg">
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-xs-12 valign">
+            <div class=wrapper>
+              <h3>Contact Us!</h3>
+              <p>Please get in touch with us directly to start the sponsorship process. Our finance team should reply promptly.</p>
+              <p><i><a href="mailto:kishan@lnstempunks.org">kishan@lnstempunks.org</a></i></p>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="section bottom clear">
+    <div class="container clear">
+      <div class="arrow-down centered"></div>
+    </div>
+  </div>
+  <div id=footer class=section>
+    <div class=container>
+      <div class=row>
+        <div class="col-md-5 col-sm-5 col-xs-12">
+          <a class="logo clearfix" href="#">
+            <img class=img-responsive src="../resources/logo.png">
+          </a>
+          <br/>
+          <p class="pull-left clearfix tagline">Get STEMpunked!</p>
+          <div class=clearfix></div>
+          <p>We're students from the L&N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/LNRobotics" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
+            <li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
+            <li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="http://flickr.com/lnstempunks" target=_blank><i class="fa fa-flickr"></i> Flickr</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <h3>Other</h3>
+          <ul>
+            <li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
+            <li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
+            <li><a href="../legal">Legal</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../resources/jquery-1.9.1.min.js"></script>
+  <script src="../resources/jquery.mixitup.min.js"></script>
+  <script src="../resources/masonry.pkgd.min.js"></script>
+  <script src="../resources/imagesloaded.pkgd.min.js"></script>
+  <script src="../resources/bootstrap.min.js"></script>
+  <script src="../resources/init.js"></script>
+  <script>
+    var $buoop = {};
+    $buoop.ol = window.onload;
+    window.onload = function() {
+      try {
+        if ($buoop.ol) $buoop.ol();
+      } catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+  </script>
+  <script>
+    var images = new Array('../RESOURCES/background1.jpg', '../RESOURCES/background2.jpg', '../RESOURCES/background3.jpg');
+    var l = images.length;
+    var random_no = Math.floor(l * Math.random());
+    document.getElementById("bg").src = images[random_no];
+  </script>
 </body>
+
 </html>
