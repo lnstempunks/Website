@@ -154,7 +154,7 @@ form .btn{float:left;margin:0 0 0 10%;}
 .form-group.textarea{border:0;}
 .form-group.textarea label{height:200px;}
 .form-group input, .form-group textarea{float:left;width:80%;margin-right:3%;}
-input, textarea, input.form-control, textarea.form-control, input.form-control:focus, textarea.form-control:focus{color:#444;font-size:16px;height:50px;outline:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none;border:0;padding:0 0 0 15px;background-color:#ccc;}
+input, textarea, input.form-control, textarea.form-control, input.form-control:focus, textarea.form-control:focus{color:#444;font-size:16px;height:50px;outline:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none;border:0;padding:0 10px 0 10px;background-color:#ccc;margin-bottom:5px;}
 textarea.form-control, textarea.form-control:focus{height:200px;resize:none;padding-top:18px;}
 label{font-weight:normal;}
 .form-control:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#777;}
@@ -473,3 +473,6 @@ body.red .social-media a{color:#b52424;}
 ::selection{background:#dde;}
 ::-moz-selection{background:#dde;}
 .sponsor-wrapper{margin:0 auto;margin-bottom:40px;height:380px;width:380px;overflow:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#CCC;}
+.display_archive {font-family: 'Oxygen'; font-size: 20px; color:#888; letter-spacing: .4px;}
+.campaign {line-height: 250%; margin: 5px;}
+#mc_embed_signup{color:#888; clear:left; font:10px font-family: 'Oxygen,Arial,sans-serif'; letter-spacing: .4px;}
