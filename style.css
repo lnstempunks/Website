@@ -6,12 +6,12 @@ body{color:#333;}
 .navbar.affix{top:0;position:fixed;}
 @font-face {
   font-family: 'OudWarenhuis';
-  src: url('oudwarenhuis.eot'); /* IE9 Compat Modes */
-  src: url('oudwarenhuis.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('oudwarenhuis.woff2') format('woff2'), /* Super Modern Browsers */
-       url('oudwarenhuis.woff') format('woff'), /* Pretty Modern Browsers */
-       url('oudwarenhuis.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('oudwarenhuis.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('resources/oudwarenhuis.eot'); /* IE9 Compat Modes */
+  src: url('resources/oudwarenhuis.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('resources/oudwarenhuis.woff2') format('woff2'), /* Super Modern Browsers */
+       url('resources/oudwarenhuis.woff') format('woff'), /* Pretty Modern Browsers */
+       url('resources/oudwarenhuis.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('resources/oudwarenhuis.svg#svgFontName') format('svg'); /* Legacy iOS */
 	   }
 @media (max-width:992px){.affix{top:auto;position:relative;}
 .affix-bottom{position:relative;}
