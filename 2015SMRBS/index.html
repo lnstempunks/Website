@@ -1,236 +1,308 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
-<meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
-<meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966,business summit,smoky mountain regional business summit">
-<link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg"/>
-<title>SMRBS - L&amp;N STEMpunks</title>
-<link href="../resources/bootstrap.css" rel=stylesheet>
-<link href="../resources/responsive-video.css" rel=stylesheet>
-<link href="../style.css" rel=stylesheet>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
-<link href="../fa/css/font-awesome.min.css" rel=stylesheet>
-<link rel="apple-touch-icon" sizes="57x57" href="../RESOURCES/apple-touch-icon-57x57.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="60x60" href="../RESOURCES/apple-touch-icon-60x60.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="72x72" href="../RESOURCES/apple-touch-icon-72x72.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="76x76" href="../RESOURCES/apple-touch-icon-76x76.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="114x114" href="../RESOURCES/apple-touch-icon-114x114.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="120x120" href="../RESOURCES/apple-touch-icon-120x120.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="144x144" href="../RESOURCES/apple-touch-icon-144x144.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="152x152" href="../RESOURCES/apple-touch-icon-152x152.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="180x180" href="../RESOURCES/apple-touch-icon-180x180.png?v=Gvvken2kmv">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
-<link rel="icon" type="image/png" href="../RESOURCES/android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
-<link rel="icon" type="image/png" href="../RESOURCES/favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
-<link rel="manifest" href="../RESOURCES/manifest.json?v=Gvvken2kmv">
-<link rel="shortcut icon" href="../RESOURCES/favicon.ico?v=Gvvken2kmv">
-<meta name="apple-mobile-web-app-title" content="L&N STEMpunks - SMRBS">
-<meta name="application-name" content="L&N STEMpunks - SMRBS">
-<meta name="msapplication-TileColor" content="#0a6118">
-<meta name="msapplication-TileImage" content="../RESOURCES/mstile-144x144.png?v=Gvvken2kmv">
-<meta name="msapplication-config" content="../RESOURCES/browserconfig.xml?v=Gvvken2kmv">
-<meta name="theme-color" content="#0a6118">
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-47780525-1','lnstempunks.org');ga('send','pageview');</script>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
+    <meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
+    <meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966,business summit,smoky mountain regional business summit">
+    <link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg" />
+    <title>SMRBS - L&amp;N STEMpunks</title>
+    <link href="../resources/bootstrap.css" rel=stylesheet>
+    <link href="../resources/responsive-video.css" rel=stylesheet>
+    <link href="../style.css" rel=stylesheet>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
+    <link href="../fa/css/font-awesome.min.css" rel=stylesheet>
+    <link rel="apple-touch-icon" sizes="57x57" href="../resources/apple-touch-icon-57x57.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="60x60" href="../resources/apple-touch-icon-60x60.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="72x72" href="../resources/apple-touch-icon-72x72.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="76x76" href="../resources/apple-touch-icon-76x76.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="114x114" href="../resources/apple-touch-icon-114x114.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="120x120" href="../resources/apple-touch-icon-120x120.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="144x144" href="../resources/apple-touch-icon-144x144.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/apple-touch-icon-152x152.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/apple-touch-icon-180x180.png?v=Gvvken2kmv">
+    <link rel="icon" type="image/png" href="../resources/favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
+    <link rel="icon" type="image/png" href="../resources/android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
+    <link rel="icon" type="image/png" href="../resources/favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
+    <link rel="icon" type="image/png" href="../resources/favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
+    <link rel="manifest" href="../resources/manifest.json?v=Gvvken2kmv">
+    <link rel="shortcut icon" href="../resources/favicon.ico?v=Gvvken2kmv">
+    <meta name="apple-mobile-web-app-title" content="L&N STEMpunks - SMRBS">
+    <meta name="application-name" content="L&N STEMpunks - SMRBS">
+    <meta name="msapplication-TileColor" content="#0a6118">
+    <meta name="msapplication-TileImage" content="../resources/mstile-144x144.png?v=Gvvken2kmv">
+    <meta name="msapplication-config" content="../resources/browserconfig.xml?v=Gvvken2kmv">
+    <meta name="theme-color" content="#0a6118">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-47780525-1', 'lnstempunks.org');
+        ga('send', 'pageview');
+    </script>
 </head>
+
 <body class=blue>
-<div class=bg>
-<div id=carousel class="carousel slide">
-<div class=carousel-inner>
-<img id=bg>
-</div>
-<div class=gradient></div>
-</div>
-</div>
-<div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
-<div class=container>
-<div class=navbar-header>
-<button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+    <div class=bg>
+        <div id=carousel class="carousel slide">
+            <div class=carousel-inner>
+                <img id=bg>
+            </div>
+            <div class=gradient></div>
+        </div>
+    </div>
+    <div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
+        <div class=container>
+            <div class=navbar-header>
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
 <span class=icon-bar></span>
 <span class=icon-bar></span>
 <span class=icon-bar></span>
 </button>
-<a class=navbar-brand href="../"><top>L&N STEMpunks</top></a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li><a href="../">HOME</a></li>
-<li><a href="../about">ABOUT</a></li>
-<li><a href="../first">FIRST</a></li>
-<li><a href="../media">MEDIA</a></li>
-<li><a href="../sponsors">SPONSORS</a></li>
- <li><a href="../news">NEWS</a></li>
-<li><a href="../contact">CONTACT</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id=home class="section clear">
-<div class=wrapper>
-<div class=row>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-8 col-sm-8 col-xs-12">
-<h1 class=welcome>Smoky Mountains Regional Business Summit</h1>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-content>
-<div id=features class=section>
-<div class="container single">
-<div class="row single">
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-3 col-sm-5 col-xs-12 pull-right">
-<img class=portrait src=logo.png>
-</div>
-<div class="col-md-7 col-sm-5 col-xs-12 pull-right">
-<h3>What is the SMRBS?</h3>
-<p>The Smoky Mountains Regional Business Summit is an annual conference held in Knoxville, Tennessee that helps FIRST Robotics Competition teams grow their skills in the areas of finance, public relations, branding, team organization, and more. The event is hosted by team 3966, the L&N STEMpunks.</p>
-<p>The conference aims to build skills in these often overlooked but critical aspects of having a successful FRC program. It will be a full day of learning, brainstorming, and networking with other teams in the region!</p>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-</div>
-<div class="container single gray">
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="row single">
-<center><h2>What are the topics?</h2></center>
-<div class="col-md-6 col-sm-6 col-xs-12 pull-left">
-<div class=wrapper>
-<center>
-<h3><p>TNFIRST*</p>
-<p>Finance and Budget</p>
-<p>Team and Sponsor Communication</p>
-<p>Team Structuring</p>
-<p>Recruitment</p></h3></center>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12 pull-left">
-<center><h3><p>Community Outreach</p>
-<p>Social Media & Photography</p>
-<p>Working with Rookie Teams*</p>
-<p>Advocacy*</p>
-<p>Scrum Project Management*</p></h3></center>
-</div>
-<center><p>*Features special guest speakers LJ Robinson, Sydney Closser, Luke Buckner, and Sam McClanahan</p></center>
-</div>
-</div>
-</div>
-<div class="container single">
-<div class="row single">
-<div class="arrow-down centered inner-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UZXUsw8ybf8" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<h3>Why should you come?</h3>
-<p>Veteran FRC students can have a peek into how other teams work, while new, inexperienced students can quickly gain these skills and propel your team to success. The Business Summit is a great opportunity for all of your students, no matter what they do on your team.</p>
-<p>The featured video showcases last year's Business Summit.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-</div>
-<div class="container smrbsmap gray">
-<div class="arrow-down centered"></div>
-<div id=smrbs-canvas></div>
-</div>
-<div class="container single gray">
-<div class="row single">
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-10 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<center><h3>Where, when, and how much is it?</h3>
-<p>The 2015 Smoky Mountains Regional Business Summit will be held on September 19th from 8:30am to 4:00pm at the Sarah Simpson Professional Development/Technology Center in South Knoxville, Tennessee at 801 Tipton Ave. 37920 (shown above).</p>
-<p>The fee is $175 per team to cover 5 members. Teams may bring up to 10 members with a fee of $10 per extra member (ex: 7 members would cost $195). The fee covers breakfast, lunch, and a notebook for each attendee.</p></center>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-</div>
-<div class=container>
-<div class="row single">
-<div class="arrow-down centered inner-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 pull-right">
-<img class=img-responsive src=group.jpg>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 pull-right">
-<div class=wrapper>
-<h3>How do I register my team?</h3>
-<p>Please follow the below link to provide your team's details. Registration is open until August 29th. We hope to see you there!</p>
-<a class=btn href="https://docs.google.com/forms/d/1qCExYGYcF6WQWf2djmggV2USR8udUbjzBONtByHyB7w/viewform" target=_blank><span class="fa fa-external-link"></span> REGISTER</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
-</div>
-</div>
-<div class="container single gray">
-<div class="arrow-down centered"></div>
-<div class=content>
-<center><h2 style="margin-bottom:30px">Questions?</h2></center>
-<center><p>If you have questions, feel free to e-mail us at <a href="mailto:contact@lnstempunks.org" target=_blank>contact@lnstempunks.org</a>.</p></center>
-</div>
-</div>
-</div>
-</div>
-<div class="section bottom clear">
-<div class="container clear">
-<div class="arrow-down centered"></div>
-</div>
-</div>
-<div id=footer class=section>
-<div class=container>
-<div class=row>
-<div class="col-md-5 col-sm-5 col-xs-12">
-<bottom>L&N STEMpunks</bottom><br/>
-<p class="pull-left clearfix tagline">Get STEMpunked!</p>
-<div class=clearfix></div>
-<p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Social</h3>
-<ul>
-<li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
-<li><a href="https://www.facebook.com/LNSTEMpunks" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
-<li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
-<li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Other</h3>
-<ul>
-<li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
-<li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
-<li><a href="../legal">Legal</a></li>
-<li><a href="#"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<script src="../resources/jquery-1.9.1.min.js"></script>
-<script src="../resources/jquery.mixitup.min.js"></script>
-<script src="../resources/masonry.pkgd.min.js"></script>
-<script src="../resources/imagesloaded.pkgd.min.js"></script>
-<script src="../resources/bootstrap.min.js"></script>
-<script src="../resources/init.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSeShgvv13q3JBmiCcaTf-EG17N1LfLs&sensor=false"></script>
-<script>function initialize(){var myLatLong=new google.maps.LatLng(35.9466212,-83.8995657);var mapOptions={center:myLatLong,zoom:17,draggable:false,scrollwheel:false};var map=new google.maps.Map(document.getElementById("smrbs-canvas"),mapOptions);var marker=new google.maps.Marker({position:myLatLong,map:map,title:"801 Tipton"});}
-google.maps.event.addDomListener(window,'load',initialize);</script>
-<script>var $buoop={};$buoop.ol=window.onload;window.onload=function(){try{if($buoop.ol)$buoop.ol();}catch(e){}
-var e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("src","//browser-update.org/update.js");document.body.appendChild(e);}</script>
-<script>var images=new Array('../RESOURCES/background1.jpg','../RESOURCES/background2.jpg','../RESOURCES/background3.jpg');var l=images.length;var random_no=Math.floor(l*Math.random());document.getElementById("bg").src=images[random_no];</script>
+                <a class=navbar-brand href="../">
+                    <top>L&N STEMpunks</top>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../">HOME</a></li>
+                    <li><a href="../about">ABOUT</a></li>
+                    <li><a href="../first">FIRST</a></li>
+                    <li><a href="../media">MEDIA</a></li>
+                    <li><a href="../sponsors">SPONSORS</a></li>
+                    <li><a href="../news">NEWS</a></li>
+                    <li><a href="../contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id=home class="section clear">
+        <div class=wrapper>
+            <div class=row>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <h1 class=welcome>Smoky Mountains Regional Business Summit</h1>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class=tab-content>
+        <div id=features class=section>
+            <div class="container single">
+                <div class="row single">
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    <div class="col-md-3 col-sm-5 col-xs-12 pull-right">
+                        <img class=portrait src=logo.png>
+                    </div>
+                    <div class="col-md-7 col-sm-5 col-xs-12 pull-right">
+                        <h3>What is the SMRBS?</h3>
+                        <p>The Smoky Mountains Regional Business Summit is an annual conference held in Knoxville, Tennessee that helps FIRST Robotics Competition teams grow their skills in the areas of finance, public relations, branding, team organization,
+                            and more. The event is hosted by team 3966, the L&N STEMpunks.</p>
+                        <p>The conference aims to build skills in these often overlooked but critical aspects of having a successful FRC program. It will be a full day of learning, brainstorming, and networking with other teams in the region!</p>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                </div>
+            </div>
+            <div class="container single gray">
+                <div class="arrow-down centered"></div>
+                <div class=content>
+                    <div class="row single">
+                        <center>
+                            <h2>What are the topics?</h2>
+                        </center>
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-left">
+                            <div class=wrapper>
+                                <center>
+                                    <h3>
+                                        <p>TNFIRST*</p>
+                                        <p>Finance and Budget</p>
+                                        <p>Team and Sponsor Communication</p>
+                                        <p>Team Structuring</p>
+                                        <p>Recruitment</p>
+                                    </h3>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-left">
+                            <center>
+                                <h3>
+                                    <p>Community Outreach</p>
+                                    <p>Social Media & Photography</p>
+                                    <p>Working with Rookie Teams*</p>
+                                    <p>Advocacy*</p>
+                                    <p>Scrum Project Management*</p>
+                                </h3>
+                            </center>
+                        </div>
+                        <center>
+                            <p>*Features special guest speakers LJ Robinson, Sydney Closser, Luke Buckner, and Sam McClanahan</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="container single">
+                <div class="row single">
+                    <div class="arrow-down centered inner-left"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                        <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UZXUsw8ybf8" frameborder=0 allowfullscreen=""></iframe></div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                        <div class=wrapper>
+                            <h3>Why should you come?</h3>
+                            <p>Veteran FRC students can have a peek into how other teams work, while new, inexperienced students can quickly gain these skills and propel your team to success. The Business Summit is a great opportunity for all of your students,
+                                no matter what they do on your team.</p>
+                            <p>The featured video showcases last year's Business Summit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                </div>
+            </div>
+            <div class="container smrbsmap gray">
+                <div class="arrow-down centered"></div>
+                <div id=smrbs-canvas></div>
+            </div>
+            <div class="container single gray">
+                <div class="row single">
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    <div class="col-md-10 col-sm-5 col-xs-12 valign">
+                        <div class=wrapper>
+                            <center>
+                                <h3>Where, when, and how much is it?</h3>
+                                <p>The 2015 Smoky Mountains Regional Business Summit will be held on September 19th from 8:30am to 4:00pm at the Sarah Simpson Professional Development/Technology Center in South Knoxville, Tennessee at 801 Tipton Ave. 37920
+                                    (shown above).</p>
+                                <p>The fee is $175 per team to cover 5 members. Teams may bring up to 10 members with a fee of $10 per extra member (ex: 7 members would cost $195). The fee covers breakfast, lunch, and a notebook for each attendee.</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                </div>
+            </div>
+            <div class=container>
+                <div class="row single">
+                    <div class="arrow-down centered inner-right"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+                        <img class=img-responsive src=group.jpg>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+                        <div class=wrapper>
+                            <h3>How do I register my team?</h3>
+                            <p>Please follow the below link to provide your team's details. Registration is open until August 29th. We hope to see you there!</p>
+                            <a class=btn href="https://docs.google.com/forms/d/1qCExYGYcF6WQWf2djmggV2USR8udUbjzBONtByHyB7w/viewform" target=_blank><span class="fa fa-external-link"></span> REGISTER</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
+                </div>
+            </div>
+            <div class="container single gray">
+                <div class="arrow-down centered"></div>
+                <div class=content>
+                    <center>
+                        <h2 style="margin-bottom:30px">Questions?</h2>
+                    </center>
+                    <center>
+                        <p>If you have questions, feel free to e-mail us at <a href="mailto:contact@lnstempunks.org" target=_blank>contact@lnstempunks.org</a>.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bottom clear">
+        <div class="container clear">
+            <div class="arrow-down centered"></div>
+        </div>
+    </div>
+    <div id=footer class=section>
+        <div class=container>
+            <div class=row>
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <bottom>L&N STEMpunks</bottom><br/>
+                    <p class="pull-left clearfix tagline">Get STEMpunked!</p>
+                    <div class=clearfix></div>
+                    <p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="https://www.facebook.com/LNSTEMpunks" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
+                        <li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
+                        <li><a href="../legal">Legal</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/jquery-1.9.1.min.js"></script>
+    <script src="../resources/jquery.mixitup.min.js"></script>
+    <script src="../resources/masonry.pkgd.min.js"></script>
+    <script src="../resources/imagesloaded.pkgd.min.js"></script>
+    <script src="../resources/bootstrap.min.js"></script>
+    <script src="../resources/init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjSeShgvv13q3JBmiCcaTf-EG17N1LfLs&sensor=false"></script>
+    <script>
+        function initialize() {
+            var myLatLong = new google.maps.LatLng(35.9466212, -83.8995657);
+            var mapOptions = {
+                center: myLatLong,
+                zoom: 17,
+                draggable: false,
+                scrollwheel: false
+            };
+            var map = new google.maps.Map(document.getElementById("smrbs-canvas"), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatLong,
+                map: map,
+                title: "801 Tipton"
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+        var $buoop = {};
+        $buoop.ol = window.onload;
+        window.onload = function() {
+            try {
+                if ($buoop.ol) $buoop.ol();
+            } catch (e) {}
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "//browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script>
+    <script>
+        var images = new Array('../resources/background1.jpg', '../resources/background2.jpg', '../resources/background3.jpg');
+        var l = images.length;
+        var random_no = Math.floor(l * Math.random());
+        document.getElementById("bg").src = images[random_no];
+    </script>
 </body>
+
 </html>

@@ -1,868 +1,938 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
-<meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
-<meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966">
-<link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg"/>
-<title>Media - L&amp;N STEMpunks</title>
-<link href="../resources/bootstrap.css" rel=stylesheet>
-<link href="../resources/responsive-video.css" rel=stylesheet>
-<link href="../style.css" rel=stylesheet>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
-<link href="../fa/css/font-awesome.min.css" rel=stylesheet>
-<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=Gvvken2kmv">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=Gvvken2kmv">
-<link rel="icon" type="image/png" href="favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
-<link rel="icon" type="image/png" href="android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
-<link rel="icon" type="image/png" href="favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
-<link rel="icon" type="image/png" href="favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
-<link rel="manifest" href="manifest.json?v=Gvvken2kmv">
-<link rel="shortcut icon" href="favicon.ico?v=Gvvken2kmv">
-<meta name="apple-mobile-web-app-title" content="Media - L&N STEMpunks">
-<meta name="application-name" content="Media - L&N STEMpunks">
-<meta name="msapplication-TileColor" content="#0a6118">
-<meta name="msapplication-TileImage" content="mstile-144x144.png?v=Gvvken2kmv">
-<meta name="msapplication-config" content="browserconfig.xml?v=Gvvken2kmv">
-<meta name="theme-color" content="#0a6118">
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-47780525-1','lnstempunks.org');ga('send','pageview');</script>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name=author content="Sam Stair, Josh Witt, and Preston Gull">
+    <meta name=description content="FIRST Robotics Competition team 3966 from downtown Knoxville, Tennessee.">.
+    <meta name=keywords content="lnstempunks,3966,knoxvile,tennessee,knoxville tennessee,l&amp;nstempunks,stempunks,stem,punks,stem punks,l&amp;n,l&amp;n stempunks,l&amp;n steampunks,robotics,FIRST,FRC,VEX,robots,steampunk,steampunks,art,design,victorian,tnfirst,tn first,smoky mountains,smoky mountain,smoky mountain regional,smoky,mountain,regional,FIRST robotics competition,frc3966">
+    <link rel=publisher href="https://plus.google.com/+LNSTEMpunksorg" />
+    <title>Media - L&amp;N STEMpunks</title>
+    <link href="../resources/bootstrap.css" rel=stylesheet>
+    <link href="../resources/responsive-video.css" rel=stylesheet>
+    <link href="../style.css" rel=stylesheet>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
+    <link href="../fa/css/font-awesome.min.css" rel=stylesheet>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=Gvvken2kmv">
+    <link rel="icon" type="image/png" href="favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
+    <link rel="manifest" href="manifest.json?v=Gvvken2kmv">
+    <link rel="shortcut icon" href="favicon.ico?v=Gvvken2kmv">
+    <meta name="apple-mobile-web-app-title" content="Media - L&N STEMpunks">
+    <meta name="application-name" content="Media - L&N STEMpunks">
+    <meta name="msapplication-TileColor" content="#0a6118">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png?v=Gvvken2kmv">
+    <meta name="msapplication-config" content="browserconfig.xml?v=Gvvken2kmv">
+    <meta name="theme-color" content="#0a6118">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-47780525-1', 'lnstempunks.org');
+        ga('send', 'pageview');
+    </script>
 </head>
+
 <body class=blue>
-<div class=bg>
-<div id=carousel class="carousel slide">
-<div class=carousel-inner>
-<img id=bg>
-</div>
-<div class=gradient></div>
-</div>
-</div>
-<div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
-<div class=container>
-<div class=navbar-header>
-<button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+    <div class=bg>
+        <div id=carousel class="carousel slide">
+            <div class=carousel-inner>
+                <img id=bg>
+            </div>
+            <div class=gradient></div>
+        </div>
+    </div>
+    <div id=navbar data-spy=affix data-offset-top=20 class="navbar navbar-inverse">
+        <div class=container>
+            <div class=navbar-header>
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
 <span class=icon-bar></span>
 <span class=icon-bar></span>
 <span class=icon-bar></span>
 </button>
-<a class=navbar-brand href="../"><top>L&N STEMpunks</top></a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li><a href="../">HOME</a></li>
-<li><a href="../about">ABOUT</a></li>
-<li><a href="../first">FIRST</a></li>
-<li><a class=active href="../media">MEDIA</a></li>
-<li><a href="../sponsors">SPONSORS</a></li>
- <li><a href="../news">NEWS</a></li>
-<li><a href="../contact">CONTACT</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id=home class="section clear">
-<div class=wrapper>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-8 col-sm-8 col-xs-12">
-<h1 class=welcome>Media</h1>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-</div>
-</div>
-<div class=container>
-<table class=nav-tabs cellspacing=0>
-<tr>
-<td><a class=active href="#videos" data-toggle=tab>VIDEOS</a></td>
-<td><a name=photos href="#photos" data-toggle=tab>PHOTOS</a></td>
-<td><a name=press href="#press" data-toggle=tab>PRESS</a></td>
-<td><a name=branding href="#branding" data-toggle=tab>BRANDING</a></td>
-<td><a name=resources href="#resources" data-toggle=tab>RESOURCES</a></td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class=tab-content>
-<div class="tab-pane active slide-left in" id=videos>
-<div id=services class="section clear">
-<div class="container single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-camera"></span>VIDEOS</h2>
-</div>
-</div>
-<div class="container gray">
-<div class=text-center>
-<h2 class="title single">FEATURED VIDEO</h2></div>
-<p></p>
-<div class="col-md-1 col-sm-1 col-xs-12"></div>
-<center><div class="col-md-10 col-sm-10 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/t-fiJHAn4kU" frameborder=0 allowfullscreen=""></iframe></div>
-<center><i>Our 2016 end-of-season video.</i></center>
-</div>
-</div></center>
-<div class="col-md-1 col-sm-1 col-xs-12"></div>
-</div>
-<div class=container>
-<div class="arrow-down centered"></div>
-<div class=content>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/pSl3PDccoyY" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/rdqBdk_a5VU" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/aaxbUgOgzy0" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/28AkdilW6dw" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UpeKt5ACARM" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/_ki0fjsg9dA" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/bYYyucAwySk" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/ltqjxqZE8Wk" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/upmHaWLzdes" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UZXUsw8ybf8" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/s91glUy6PTI" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/AkvlMNNIfO4" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/cKwkVOi2MxU" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/eS_2hqNE_i8" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/XKlffVT0Bbc" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/cGqFjEuw4M8" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/-O8EzExBo1o" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<div class=wrapper>
-<div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/BPo9zH1IIYY" frameborder=0 allowfullscreen=""></iframe></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=photos>
-<div id=services class="section clear">
-<div class="container single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-camera-retro"></span>PHOTOS</h2>
-</div>
-</div>
-<div class="container gray">
-<div class="col-md-12 col-sm-12 col-xs-12">
-<h2 class="title single">Photos are temporarily unavailable on our website. If you're looking for or in need of some, email <a href="mailto:contact@lnstempunks.org">contact@lnstempunks.org.</a></h2>
-</div>
-</div>
-<div class="container gray">
-</div>
-</div>
-</div>
-<div class=tab-pane id=press>
-<div id=services class="section clear">
-<div class="container single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-newspaper-o"></span>PRESS</h2>
-</div>
-</div>
-</div>
-<div id=team class=section>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2016">
-<div class=text-center>
-<h2 class=title>2017</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/CC2017.JPG">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<h3>WATE</h3>
-<p><i>Progress continues on Knoxville’s Change Center, aimed at curbing youth violence</i></p>
-<a class=btn href="http://wate.com/2017/01/27/progress-continues-on-knoxvilles-change-center-aimed-at-curbing-youth-violence/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2016">
-<div class=text-center>
-<h2 class=title>2016</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div id=p2016 class="collapse in">
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/MagShowcase2016.JPG">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<h3>Knoxville News Sentinel</h3>
-<p><i>Knox County Schools Magnet Showcase draws crowd</i></p>
-<a class=btn href="http://www.knoxnews.com/story/news/education/2016/10/20/knox-magnet-schools-draws-crowd/92457312/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/mtwbir.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<h3>WBIR</h3>
-<p><i>L&N STEMpunks win international award</i></p>
-<a class=btn href="http://www.wbir.com/news/local/ln-stempunks-win-international-award/175417539" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/mtkn.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<h3>Knoxville News Sentinel</h3>
-<p><i>Knoxville teens win national award for technology media campaign</i></p>
-<a class=btn href="http://www.knoxnews.com/business/knoxville-teens-win-national-award-for-technology-media-campaign-31f6d177-612e-1da2-e053-0100007fd1b-378151851.html" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/ven.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<h3>Knox County Schools</h3>
-<p><i>Vine Engineering Night</i></p>
-<a class=btn href="https://vimeo.com/154644076" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-</div>
-<div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2015">
-<div class=text-center>
-<h2 class=title>2015</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div id=p2015 class="collapse in">
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/gmfll.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<h3>Knoxville News Sentinel</h3>
-<p><i>Green Magnet Academy students learn robotics with LEGOs</i></p>
-<a class=btn href="http://www.knoxnews.com/news/local/green-magnet-academy-students-learn-robotics-with-legos-2679b1f6-717d-1075-e053-0100007f1fb8-363665441.html" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/b2sb.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<h3>Knoxville News Sentinel</h3>
-<p><i>Hundreds turn out for Back to School Bash at Expo Center</i></p>
-<a class=btn href="http://www.knoxnews.com/news/local-news/hundreds-turn-out-for-back-to-school-bash-at-expo-center_21988478" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/wate.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<h3>WATE</h3>
-<p><i>Local Teams Compete in Knoxville Robotics Contest</i></p>
-<a class=btn href="http://wate.com/2015/04/03/local-teams-compete-in-knoxville-robotics-contest/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/9872015.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>98.7 NewsTalk</h3>
-<p><i>The Phil Show</i></p>
-<a class=btn href="https://www.youtube.com/watch?v=MHKZDdZO178" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-</div>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2014">
-<div class=text-center>
-<h2 class=title>2014</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div id=p2014 class="collapse in">
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/wbir2014.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<h3>WBIR</h3>
-<p><i>Positively Schwall: Engineering Day</i></p>
-<a class=btn href="http://www.wbir.com/videos/news/local/schwall/2014/10/23/15986124/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered pull-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/9872014.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>98.7 NewsTalk</h3>
-<p><i>The Phil Show</i></p>
-<a class=btn href="http://youtu.be/3G4h02IARJ0" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/chamber2014.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<h3>Knoxville Chamber</h3>
-<p><i>2014/15 Smoky Mountain Regional FIRST Robotics Competition</i></p>
-<a class=btn href="http://youtu.be/iEu3vrX9hGM" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/ns2014.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>Knoxville News Sentinel</h3>
-<p><i>FIRST competition about building a better robot</i></p>
-<a class=btn href="http://www.knoxnews.com/news/first-competition-about-building-a-better-robot" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-</div>
-<div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2013">
-<div class=text-center>
-<h2 class=title>2013</h2>
-</div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-</div>
-<div id=p2013 class="collapse in">
-<div class="container gray">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign">
-<div class=home-wrapper>
-<img class=img-responsive src="press/ns2013.jpg">
-</div>
-</div>
-<div class="col-md-6 col-sm-5 col-xs-12 valign">
-<div class=wrapper>
-<h3>Knoxville News Sentinel</h3>
-<p><i>STEM students raising funds to refurbish L&N sign</i></p>
-<a class=btn href="http://www.knoxnews.com/news/stem-students-raising-funds-to-refurbish-ln-sign" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container">
-<div class="arrow-down centered pull-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=home-wrapper>
-<img class=img-responsive src="press/mp2013.jpg">
-</div>
-</div>
-<div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>Metro Pulse</h3>
-<p><i>Q&A: Jentry Jones and Henry Gertsen, Team Leaders for the L&N STEMpunks</i></p>
-<a class=btn href="http://www.metropulse.com/stories/street-talk/jentry-jones-and-henry-gertsen-team-leaders-ln-s" target=_blank><span class="fa fa-external-link"></span> LINK</a>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=branding>
-<div id=services class="section clear">
-<div class="container single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-paint-brush"></span>BRANDING</h2>
-</div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 pull-right valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="branding/logosmall.png">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 pull-right valign">
-<div class=wrapper>
-<h3>Logo</h3>
-<p>Our logo combines many different team elements; the L&N sign featured hangs on the corner of our school, the gryphon in the center is our school's mascot, the gears at the top emphasize that we are a robotics team, 3966 is our team number, and we are the "STEMpunks."</p>
-<p><i><a href="branding/logo-standard.png">Standard</a> - <a href="branding/logo-green.png">Only Green</a> - <a href="branding/logo-white.png">Only White</a></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-<div class=container>
-<div class="arrow-down centered inner-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-3 col-sm-6 col-xs-12 valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="branding/fontsmall.png">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign">
-<div class=wrapper>
-<h3>Fonts</h3>
-<p>When creating posters, apparel, or other brand elements, our team utilizes the Oud Warenhuis and Oxygen fonts. We picked the Oud Warenhuis font because it reflects steampunk design ethics, is easily legible at a distance, and includes a secondary "shadow." Oxygen serves as our secondary font for large blocks of small text, as it is more legible than Oud Warenhuis at small sizes.</p>
-<p><i><a href="https://creativemarket.com/Gumpita/11550-Oud-Warenhuis-Typeface">Oud Warenhuis</a></i> - <i><a href="https://www.google.com/fonts/specimen/Oxygen">Oxygen</a></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered inner-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 valign pull-right">
-<div class=branding-wrapper>
-<img class=img-responsive src="branding/taglinesmall.png">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>Slogan / Tagline</h3>
-<p>Our slogan, "Get STEMpunked," is commonly shown in brand elements that accompany our logo. The slogan is typically depicted in the Oud Warenhuis font.</p>
-<p><i><a href="branding/slogan-white.png">White</a> - <a href="branding/slogan-green.png">Green</a> - <a href="branding/slogan-whitens.png">White (No Shadow)</a> - <a href="branding/slogan-greenns.png">Green (No Shadow)</a></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-<div class=container>
-<div class="arrow-down centered inner-right"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 valign">
-<div class=branding-wrapper>
-<img class=img-responsive src="branding/colors.png">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign">
-<div class=wrapper>
-<h3>Colors</h3>
-<p>Our team utilizes three colors in our branding; green, white, and gold. Our primary and tertiary colors, green and gold, are derived from our school's colors. We use white as a secondary color due in part to it's easiness to view and cost efficiency in printing.</p>
-<p><i><font color="#0a6118">Green - #0a6118</font> White - #ffffff <font color=c37417>Gold - #c37417</font></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
-</div>
-<div class="container gray">
-<div class="arrow-down centered inner-left"></div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-<div class="col-md-3 col-sm-4 col-xs-12 valign pull-right">
-<div class=branding-wrapper>
-<img class=img-responsive src="branding/gryphon.png">
-</div>
-</div>
-<div class="col-md-7 col-sm-6 col-xs-12 valign pull-right">
-<div class=wrapper>
-<h3>Mascot</h3>
-<p>Our mascot, the gryphon, is shared with our school. We use the gryphon on our shirts and banners and as an accompanying element in our designs on our products.</p>
-<p><i><a href="branding/2014gryphon.png">Front</a> - <a href="branding/2014gryphonlogo.png">Front and Logo</a> - <a href="branding/2015gryphon.png">Side</a> - <a href="branding/2015gryphonlogo.png">Side and Logo</a></i></p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
-</div>
-</div>
-</div>
-<div class=tab-pane id=resources>
-<div id=services class="section clear">
-<div class="container single">
-<div class=text-center>
-<h2 class="title single"><span class="fa fa-wrench"></span>RESOURCES</h2>
-</div>
-</div>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2016">
-<div class=text-center>
-<h2 class="title single">2016</h2>
-</div>
-</div>
-<div id=r2016 class="collapse in">
-<div class="container single">
-<div class="arrow-down centered"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<br/><br/><br/>
-<div class=pricing>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Media and Technology Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/mediatech2016.pdf">LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Business Plan</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/bizplan2016.pdf">LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Chairman's Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/chairmans2016.pdf">LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2015">
-<div class=text-center>
-<h2 class="title single">2015</h2>
-</div>
-</div>
-<div id=r2015 class="collapse in">
-<div class="container single">
-<div class="arrow-down centered"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<br/><br/><br/>
-<div class=pricing>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Business Plan</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/entrepreneurship2015.pdf">LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Chairman's Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/chairmans2015.pdf">LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>TN FRC Teams Social Media</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="https://docs.google.com/spreadsheets/d/1pR2_e8YfQtWZsAO8lqM0RsZType9cYUq5Z2kbySlkLw/edit?usp=sharing" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="container single">
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<br/><br/><br/>
-<div class=pricing>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Organizational Chart</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/organization.png" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Media and Technology Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/mediatech2015.pdf" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Robot Code</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="https://github.com/LN-STEMpunks/3966FRC2015" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2014">
-<div class=text-center>
-<h2 class="title single">2014</h2>
-</div>
-</div>
-<div id=r2014 class="collapse in">
-<div class="container single">
-<div class="arrow-down centered"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<br/><br/><br/>
-<div class=pricing>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Business Plan</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/entrepreneurship2014.pdf" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Chairman's Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/chairmans2014.pdf" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Social Media Presentation</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="https://docs.google.com/presentation/d/14P9UlE7GqoCbyv1AbU-0HpUQ4MISwawXpLNoDCUSx2s/edit?usp=sharing" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="container single">
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<div class="col-md-2 col-sm-2 col-xs-12"></div>
-<br/><br/><br/>
-<div class=pricing>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>2014 Robot Code</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="https://github.com/LN-STEMpunks/Shrimp" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class=wrapper>
-<h3 class=text-center>Media and Technology Award</h3>
-<table class=table>
-<tbody>
-<tr><td><a class=btn href="resources/mediatech2014.pdf" target=_blank>LINK</a></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section bottom clear">
-<div class="container clear">
-<div class="arrow-down centered"></div>
-</div>
-</div>
-<div id=footer class=section>
-<div class=container>
-<div class=row>
-<div class="col-md-5 col-sm-5 col-xs-12">
-<bottom>L&N STEMpunks</bottom><br/>
-<p class="pull-left clearfix tagline">Get STEMpunked!</p>
-<div class=clearfix></div>
-<p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Social</h3>
-<ul>
-<li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
-<li><a href="https://www.facebook.com/LNSTEMpunks" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
-<li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
-<li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-6">
-<h3>Other</h3>
-<ul>
-<li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
-<li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
-<li><a href="../legal">Legal</a></li>
-<li><a href="#"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<script src="../resources/jquery-1.9.1.min.js"></script>
-<script src="../resources/jquery.mixitup.min.js"></script>
-<script src="../resources/masonry.pkgd.min.js"></script>
-<script src="../resources/imagesloaded.pkgd.min.js"></script>
-<script src="../resources/bootstrap.min.js"></script>
-<script src="../resources/init.js"></script>
-<script>var $buoop={};$buoop.ol=window.onload;window.onload=function(){try{if($buoop.ol)$buoop.ol();}catch(e){}
-var e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("src","//browser-update.org/update.js");document.body.appendChild(e);}</script>
-<script>var images=new Array('../RESOURCES/background1.jpg','../RESOURCES/background2.jpg','../RESOURCES/background3.jpg');var l=images.length;var random_no=Math.floor(l*Math.random());document.getElementById("bg").src=images[random_no];</script>
+                <a class=navbar-brand href="../">
+                    <top>L&N STEMpunks</top>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../">HOME</a></li>
+                    <li><a href="../about">ABOUT</a></li>
+                    <li><a href="../first">FIRST</a></li>
+                    <li><a class=active href="../media">MEDIA</a></li>
+                    <li><a href="../sponsors">SPONSORS</a></li>
+                    <li><a href="../news">NEWS</a></li>
+                    <li><a href="../contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id=home class="section clear">
+        <div class=wrapper>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <h1 class=welcome>Media</h1>
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+    <div class=container>
+        <table class=nav-tabs cellspacing=0>
+            <tr>
+                <td><a class=active href="#videos" data-toggle=tab>VIDEOS</a></td>
+                <td><a name=photos href="#photos" data-toggle=tab>PHOTOS</a></td>
+                <td><a name=press href="#press" data-toggle=tab>PRESS</a></td>
+                <td><a name=branding href="#branding" data-toggle=tab>BRANDING</a></td>
+                <td><a name=resources href="#resources" data-toggle=tab>resources</a></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+    <div class=tab-content>
+        <div class="tab-pane active slide-left in" id=videos>
+            <div id=services class="section clear">
+                <div class="container single">
+                    <div class=text-center>
+                        <h2 class="title single"><span class="fa fa-camera"></span>VIDEOS</h2>
+                    </div>
+                </div>
+                <div class="container gray">
+                    <div class=text-center>
+                        <h2 class="title single">FEATURED VIDEO</h2>
+                    </div>
+                    <p></p>
+                    <div class="col-md-1 col-sm-1 col-xs-12"></div>
+                    <center>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/t-fiJHAn4kU" frameborder=0 allowfullscreen=""></iframe></div>
+                                <center><i>Our 2016 end-of-season video.</i></center>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="col-md-1 col-sm-1 col-xs-12"></div>
+                </div>
+                <div class=container>
+                    <div class="arrow-down centered"></div>
+                    <div class=content>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/pSl3PDccoyY" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/rdqBdk_a5VU" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/aaxbUgOgzy0" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/28AkdilW6dw" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UpeKt5ACARM" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/_ki0fjsg9dA" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/bYYyucAwySk" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/ltqjxqZE8Wk" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/upmHaWLzdes" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/UZXUsw8ybf8" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/s91glUy6PTI" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/AkvlMNNIfO4" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/cKwkVOi2MxU" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/eS_2hqNE_i8" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/XKlffVT0Bbc" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/cGqFjEuw4M8" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/-O8EzExBo1o" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class=wrapper>
+                                <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/BPo9zH1IIYY" frameborder=0 allowfullscreen=""></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=tab-pane id=photos>
+            <div id=services class="section clear">
+                <div class="container single">
+                    <div class=text-center>
+                        <h2 class="title single"><span class="fa fa-camera-retro"></span>PHOTOS</h2>
+                    </div>
+                </div>
+                <div class="container gray">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="title single">Photos are temporarily unavailable on our website. If you're looking for or in need of some, email <a href="mailto:contact@lnstempunks.org">contact@lnstempunks.org.</a></h2>
+                    </div>
+                </div>
+                <div class="container gray">
+                </div>
+            </div>
+        </div>
+        <div class=tab-pane id=press>
+            <div id=services class="section clear">
+                <div class="container single">
+                    <div class=text-center>
+                        <h2 class="title single"><span class="fa fa-newspaper-o"></span>PRESS</h2>
+                    </div>
+                </div>
+            </div>
+            <div id=team class=section>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2016">
+                    <div class=text-center>
+                        <h2 class=title>2017</h2>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+                <div class="container">
+                    <div class="arrow-down centered pull-left"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                        <div class=home-wrapper>
+                            <img class=img-responsive src="press/CC2017.JPG">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                        <h3>WATE</h3>
+                        <p><i>Progress continues on Knoxville’s Change Center, aimed at curbing youth violence</i></p>
+                        <a class=btn href="http://wate.com/2017/01/27/progress-continues-on-knoxvilles-change-center-aimed-at-curbing-youth-violence/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                </div>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2016">
+                    <div class=text-center>
+                        <h2 class=title>2016</h2>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+                <div id=p2016 class="collapse in">
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/MagShowcase2016.JPG">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <h3>Knoxville News Sentinel</h3>
+                            <p><i>Knox County Schools Magnet Showcase draws crowd</i></p>
+                            <a class=btn href="http://www.knoxnews.com/story/news/education/2016/10/20/knox-magnet-schools-draws-crowd/92457312/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/mtwbir.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <h3>WBIR</h3>
+                            <p><i>L&N STEMpunks win international award</i></p>
+                            <a class=btn href="http://www.wbir.com/news/local/ln-stempunks-win-international-award/175417539" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/mtkn.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <h3>Knoxville News Sentinel</h3>
+                            <p><i>Knoxville teens win national award for technology media campaign</i></p>
+                            <a class=btn href="http://www.knoxnews.com/business/knoxville-teens-win-national-award-for-technology-media-campaign-31f6d177-612e-1da2-e053-0100007fd1b-378151851.html" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/ven.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <h3>Knox County Schools</h3>
+                            <p><i>Vine Engineering Night</i></p>
+                            <a class=btn href="https://vimeo.com/154644076" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                </div>
+                <div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2015">
+                    <div class=text-center>
+                        <h2 class=title>2015</h2>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+                <div id=p2015 class="collapse in">
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/gmfll.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <h3>Knoxville News Sentinel</h3>
+                            <p><i>Green Magnet Academy students learn robotics with LEGOs</i></p>
+                            <a class=btn href="http://www.knoxnews.com/news/local/green-magnet-academy-students-learn-robotics-with-legos-2679b1f6-717d-1075-e053-0100007f1fb8-363665441.html" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/b2sb.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <h3>Knoxville News Sentinel</h3>
+                            <p><i>Hundreds turn out for Back to School Bash at Expo Center</i></p>
+                            <a class=btn href="http://www.knoxnews.com/news/local-news/hundreds-turn-out-for-back-to-school-bash-at-expo-center_21988478" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                        </div>
+                    </div>
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/wate.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=wrapper>
+                                <h3>WATE</h3>
+                                <p><i>Local Teams Compete in Knoxville Robotics Contest</i></p>
+                                <a class=btn href="http://wate.com/2015/04/03/local-teams-compete-in-knoxville-robotics-contest/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container">
+                        <div class="arrow-down centered pull-right"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/9872015.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=wrapper>
+                                <h3>98.7 NewsTalk</h3>
+                                <p><i>The Phil Show</i></p>
+                                <a class=btn href="https://www.youtube.com/watch?v=MHKZDdZO178" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    </div>
+                </div>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2014">
+                    <div class=text-center>
+                        <h2 class=title>2014</h2>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+                <div id=p2014 class="collapse in">
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/wbir2014.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=wrapper>
+                                <h3>WBIR</h3>
+                                <p><i>Positively Schwall: Engineering Day</i></p>
+                                <a class=btn href="http://www.wbir.com/videos/news/local/schwall/2014/10/23/15986124/" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-right"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/9872014.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=wrapper>
+                                <h3>98.7 NewsTalk</h3>
+                                <p><i>The Phil Show</i></p>
+                                <a class=btn href="http://youtu.be/3G4h02IARJ0" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    </div>
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/chamber2014.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=wrapper>
+                                <h3>Knoxville Chamber</h3>
+                                <p><i>2014/15 Smoky Mountain Regional FIRST Robotics Competition</i></p>
+                                <a class=btn href="http://youtu.be/iEu3vrX9hGM" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/ns2014.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=wrapper>
+                                <h3>Knoxville News Sentinel</h3>
+                                <p><i>FIRST competition about building a better robot</i></p>
+                                <a class=btn href="http://www.knoxnews.com/news/first-competition-about-building-a-better-robot" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    </div>
+                </div>
+                <div class="container single" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#p2013">
+                    <div class=text-center>
+                        <h2 class=title>2013</h2>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                </div>
+                <div id=p2013 class="collapse in">
+                    <div class="container gray">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/ns2013.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-xs-12 valign">
+                            <div class=wrapper>
+                                <h3>Knoxville News Sentinel</h3>
+                                <p><i>STEM students raising funds to refurbish L&N sign</i></p>
+                                <a class=btn href="http://www.knoxnews.com/news/stem-students-raising-funds-to-refurbish-ln-sign" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    </div>
+                    <div class="container">
+                        <div class="arrow-down centered pull-left"></div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=home-wrapper>
+                                <img class=img-responsive src="press/mp2013.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-12 valign pull-right">
+                            <div class=wrapper>
+                                <h3>Metro Pulse</h3>
+                                <p><i>Q&A: Jentry Jones and Henry Gertsen, Team Leaders for the L&N STEMpunks</i></p>
+                                <a class=btn href="http://www.metropulse.com/stories/street-talk/jentry-jones-and-henry-gertsen-team-leaders-ln-s" target=_blank><span class="fa fa-external-link"></span> LINK</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=tab-pane id=branding>
+            <div id=services class="section clear">
+                <div class="container single">
+                    <div class=text-center>
+                        <h2 class="title single"><span class="fa fa-paint-brush"></span>BRANDING</h2>
+                    </div>
+                </div>
+                <div class="container gray">
+                    <div class="arrow-down centered"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 pull-right valign">
+                        <div class=branding-wrapper>
+                            <img class=img-responsive src="branding/logosmall.png">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 pull-right valign">
+                        <div class=wrapper>
+                            <h3>Logo</h3>
+                            <p>Our logo combines many different team elements; the L&N sign featured hangs on the corner of our school, the gryphon in the center is our school's mascot, the gears at the top emphasize that we are a robotics team, 3966 is
+                                our team number, and we are the "STEMpunks."</p>
+                            <p><i><a href="branding/logo-standard.png">Standard</a> - <a href="branding/logo-green.png">Only Green</a> - <a href="branding/logo-white.png">Only White</a></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                </div>
+                <div class=container>
+                    <div class="arrow-down centered inner-right"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 valign">
+                        <div class=branding-wrapper>
+                            <img class=img-responsive src="branding/fontsmall.png">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 valign">
+                        <div class=wrapper>
+                            <h3>Fonts</h3>
+                            <p>When creating posters, apparel, or other brand elements, our team utilizes the Oud Warenhuis and Oxygen fonts. We picked the Oud Warenhuis font because it reflects steampunk design ethics, is easily legible at a distance, and
+                                includes a secondary "shadow." Oxygen serves as our secondary font for large blocks of small text, as it is more legible than Oud Warenhuis at small sizes.</p>
+                            <p><i><a href="https://creativemarket.com/Gumpita/11550-Oud-Warenhuis-Typeface">Oud Warenhuis</a></i> - <i><a href="https://www.google.com/fonts/specimen/Oxygen">Oxygen</a></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                </div>
+                <div class="container gray">
+                    <div class="arrow-down centered inner-left"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 valign pull-right">
+                        <div class=branding-wrapper>
+                            <img class=img-responsive src="branding/taglinesmall.png">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 valign pull-right">
+                        <div class=wrapper>
+                            <h3>Slogan / Tagline</h3>
+                            <p>Our slogan, "Get STEMpunked," is commonly shown in brand elements that accompany our logo. The slogan is typically depicted in the Oud Warenhuis font.</p>
+                            <p><i><a href="branding/slogan-white.png">White</a> - <a href="branding/slogan-green.png">Green</a> - <a href="branding/slogan-whitens.png">White (No Shadow)</a> - <a href="branding/slogan-greenns.png">Green (No Shadow)</a></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                </div>
+                <div class=container>
+                    <div class="arrow-down centered inner-right"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 valign">
+                        <div class=branding-wrapper>
+                            <img class=img-responsive src="branding/colors.png">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 valign">
+                        <div class=wrapper>
+                            <h3>Colors</h3>
+                            <p>Our team utilizes three colors in our branding; green, white, and gold. Our primary and tertiary colors, green and gold, are derived from our school's colors. We use white as a secondary color due in part to it's easiness to
+                                view and cost efficiency in printing.</p>
+                            <p><i><font color="#0a6118">Green - #0a6118</font> White - #ffffff <font color=c37417>Gold - #c37417</font></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
+                </div>
+                <div class="container gray">
+                    <div class="arrow-down centered inner-left"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 valign pull-right">
+                        <div class=branding-wrapper>
+                            <img class=img-responsive src="branding/gryphon.png">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12 valign pull-right">
+                        <div class=wrapper>
+                            <h3>Mascot</h3>
+                            <p>Our mascot, the gryphon, is shared with our school. We use the gryphon on our shirts and banners and as an accompanying element in our designs on our products.</p>
+                            <p><i><a href="branding/2014gryphon.png">Front</a> - <a href="branding/2014gryphonlogo.png">Front and Logo</a> - <a href="branding/2015gryphon.png">Side</a> - <a href="branding/2015gryphonlogo.png">Side and Logo</a></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-12 valign pull-right"></div>
+                </div>
+            </div>
+        </div>
+        <div class=tab-pane id=resources>
+            <div id=services class="section clear">
+                <div class="container single">
+                    <div class=text-center>
+                        <h2 class="title single"><span class="fa fa-wrench"></span>resources</h2>
+                    </div>
+                </div>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2016">
+                    <div class=text-center>
+                        <h2 class="title single">2016</h2>
+                    </div>
+                </div>
+                <div id=r2016 class="collapse in">
+                    <div class="container single">
+                        <div class="arrow-down centered"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <br/><br/><br/>
+                        <div class=pricing>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Media and Technology Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/mediatech2016.pdf">LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Business Plan</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/bizplan2016.pdf">LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Chairman's Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/chairmans2016.pdf">LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2015">
+                    <div class=text-center>
+                        <h2 class="title single">2015</h2>
+                    </div>
+                </div>
+                <div id=r2015 class="collapse in">
+                    <div class="container single">
+                        <div class="arrow-down centered"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <br/><br/><br/>
+                        <div class=pricing>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Business Plan</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/entrepreneurship2015.pdf">LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Chairman's Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/chairmans2015.pdf">LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>TN FRC Teams Social Media</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="https://docs.google.com/spreadsheets/d/1pR2_e8YfQtWZsAO8lqM0RsZType9cYUq5Z2kbySlkLw/edit?usp=sharing" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container single">
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <br/><br/><br/>
+                        <div class=pricing>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Organizational Chart</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/organization.png" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Media and Technology Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/mediatech2015.pdf" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Robot Code</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="https://github.com/LN-STEMpunks/3966FRC2015" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container single gray" style="cursor: pointer; cursor:hand;" data-toggle=collapse data-target="#r2014">
+                    <div class=text-center>
+                        <h2 class="title single">2014</h2>
+                    </div>
+                </div>
+                <div id=r2014 class="collapse in">
+                    <div class="container single">
+                        <div class="arrow-down centered"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <br/><br/><br/>
+                        <div class=pricing>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Business Plan</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/entrepreneurship2014.pdf" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Chairman's Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/chairmans2014.pdf" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Social Media Presentation</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="https://docs.google.com/presentation/d/14P9UlE7GqoCbyv1AbU-0HpUQ4MISwawXpLNoDCUSx2s/edit?usp=sharing" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container single">
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                        <br/><br/><br/>
+                        <div class=pricing>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>2014 Robot Code</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="https://github.com/LN-STEMpunks/Shrimp" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class=wrapper>
+                                    <h3 class=text-center>Media and Technology Award</h3>
+                                    <table class=table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class=btn href="resources/mediatech2014.pdf" target=_blank>LINK</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bottom clear">
+        <div class="container clear">
+            <div class="arrow-down centered"></div>
+        </div>
+    </div>
+    <div id=footer class=section>
+        <div class=container>
+            <div class=row>
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <bottom>L&N STEMpunks</bottom><br/>
+                    <p class="pull-left clearfix tagline">Get STEMpunked!</p>
+                    <div class=clearfix></div>
+                    <p>We're students from the L&amp;N STEM Academy in downtown Knoxville, Tennessee with a passion to learn and innovate. We participate in the FIRST Robotics Competition each year.</p>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-0 empty"></div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/LNSTEMpunks" target=_blank><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="https://www.facebook.com/LNSTEMpunks" target=_blank><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="https://youtube.com/lnstempunks" target=_blank><i class="fa fa-youtube-square"></i> YouTube</a></li>
+                        <li><a href="http://instagram.com/lnstempunks" target=_blank><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="http://www.knoxschools.org/landn" target=_blank>School</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1Rx0ogh5_cBMjuSanAL1Sewbo8sCCNaazPlMi8YLRPDs/viewform">Feedback</a></li>
+                        <li><a href="../legal">Legal</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/jquery-1.9.1.min.js"></script>
+    <script src="../resources/jquery.mixitup.min.js"></script>
+    <script src="../resources/masonry.pkgd.min.js"></script>
+    <script src="../resources/imagesloaded.pkgd.min.js"></script>
+    <script src="../resources/bootstrap.min.js"></script>
+    <script src="../resources/init.js"></script>
+    <script>
+        var $buoop = {};
+        $buoop.ol = window.onload;
+        window.onload = function() {
+            try {
+                if ($buoop.ol) $buoop.ol();
+            } catch (e) {}
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "//browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script>
+    <script>
+        var images = new Array('../resources/background1.jpg', '../resources/background2.jpg', '../resources/background3.jpg');
+        var l = images.length;
+        var random_no = Math.floor(l * Math.random());
+        document.getElementById("bg").src = images[random_no];
+    </script>
 </body>
+
 </html>
