@@ -17,25 +17,25 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,%20700' rel=stylesheet type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300,%20600' rel=stylesheet type='text/css'>
     <link href="fa/css/font-awesome.min.css" rel=stylesheet>
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=Gvvken2kmv">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=Gvvken2kmv">
-    <link rel="icon" type="image/png" href="favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
-    <link rel="icon" type="image/png" href="android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-touch-icon-57x57.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-touch-icon-60x60.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-touch-icon-72x72.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon-76x76.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-touch-icon-114x114.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-touch-icon-120x120.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-touch-icon-144x144.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-touch-icon-152x152.png?v=Gvvken2kmv">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon-180x180.png?v=Gvvken2kmv">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png?v=Gvvken2kmv" sizes="32x32">
+    <link rel="icon" type="image/png" href="./assets/favicon/android-chrome-192x192.png?v=Gvvken2kmv" sizes="192x192">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png?v=Gvvken2kmv" sizes="96x96">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png?v=Gvvken2kmv" sizes="16x16">
     <link rel="manifest" href="manifest.json?v=Gvvken2kmv">
-    <link rel="shortcut icon" href="favicon.ico?v=Gvvken2kmv">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico?v=Gvvken2kmv">
     <meta name="apple-mobile-web-app-title" content="Home - L&N STEMpunks">
     <meta name="application-name" content="Home - L&N STEMpunks">
     <meta name="msapplication-TileColor" content="#0a6118">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png?v=Gvvken2kmv">
+    <meta name="msapplication-TileImage" content="./assets/mstile/mstile-144x144.png?v=Gvvken2kmv">
     <meta name="msapplication-config" content="browserconfig.xml?v=Gvvken2kmv">
     <meta name="theme-color" content="#0a6118">
     <script>
@@ -69,8 +69,8 @@
         <div id=carousel class="carousel slide">
             <div class=carousel-inner>
                 <video poster="resources/background1.jpg" id="bgvid" autoplay loop preload>
-<source src=bg.webm type="video/webm">
-<source src=bg.mp4 type="video/mp4">
+<source src="assets/videos/bg.webm" type="video/webm">
+<source src="assets/videos/bg.mp4" type="video/mp4">
 <img id=bg>
 </video>
             </div>
@@ -81,10 +81,10 @@
         <div class=container>
             <div class=navbar-header>
                 <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-</button>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                </button>
                 <a class=navbar-brand href=.>
                     <top>L&N STEMpunks</top>
                 </a>
@@ -108,9 +108,9 @@
                 var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 
                 if (is_chrome) {
-                    document.write('<h1><video id=logo src=logo.webm poster=stempunkslogo.png autoplay preload><img class=img-landing src=stempunkslogo.png></img></video></h1>');
+                    document.write('<h1><video id=logo src="assets/videos/logo.webm" poster="assets/videos/stempunkslogo.png" autoplay preload><img class=img-landing src="assets/videos/stempunkslogo.png"></img></video></h1>');
                 } else {
-                    document.write('<h1><img class=img-landing src=stempunkslogo.png></img></h1>');
+                    document.write('<h1><img class=img-landing src="assets/videos/stempunkslogo.png"></img></h1>');
                 }
             </script>
             <br>
@@ -131,7 +131,7 @@
                     <div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
                     <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
                         <div class=wrapper>
-                            <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/Mew6G_og-PI" frameborder=0 allowfullscreen=""></iframe></div>
+                            <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/gmiYWTmFRVE" frameborder=0 allowfullscreen=""></iframe></div>
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
@@ -139,30 +139,19 @@
                             <p>
                                 <br></br>
                             </p>
-                            <h3>DESTINATION: DEEP SPACE</h3>
-                            <p>Our team is excited for this year's season, DESTINATION: DEEP SPACE! This game is space-adventure themed, and we think that's downright cool! We're hard at work on our robot for this competition right now, and you'll be able to see us compete
-                                at the Bayou Regional from March 20th to 23rd and the Smoky Mountains Regional from March 27th to 30th.</p>
+                            <h3>INFINITE RECHARGE</h3>
+                            <p>Our team is excited for this year's season, INFINITE RECHARGE! This game is Star-Wars themed, and we think that's downright cool! We're hard at work on our robot for this competition right now, and you'll be able to see us compete
+                                at the Arkansas Regional from March 4th to 7th and the Smoky Mountains Regional from March 25th to 28th.</p>
                         </div>
                     </div>
                     <div class="col-md-1 col-sm-1 col-xs-12 pull-right"></div>
-                </div>
-
-                <div class="container gray">
-                    <div class="arrow-down centered"></div>
-                    <div class=content>
-                        <center>
-                            <h3>
-                            GET STEMpunked TODAY! <br><br> To join us in the 2019-2020 Infinite Recharge Competition, please pay your team fees here!</h3>
-                            <a class=btn href="https://squareup.com/store/l-and-n-stempunks-inc/item/student-membership-fee" target=_blank><span class="fa fa-external-link"></span> STUDENT FEES</a>
-                        </center>
-                    </div>
                 </div>
 
                 <div class="container newd gray">
                     <div class="col-md-1 col-sm-1 col-xs-12 valign"></div>
                     <div class="col-md-5 col-sm-5 col-xs-12 valign">
                         <div class=home-wrapper>
-                            <img class=img-responsive src="SMR2019.jpg">
+                            <img class=img-responsive src="assets/img/SMR2019.jpg">
                             <div class=clearfix></div>
                         </div>
                     </div>
@@ -256,14 +245,12 @@
             </div>
         </div>
     </div>
-    <script src="resources/jquery-1.9.1.min.js"></script>
-    <script src="resources/jquery.mixitup.min.js"></script>
-    <script src="resources/jquery.easing.min.js"></script>
-    <script src="resources/grayscale.js"></script>
-    <script src="resources/masonry.pkgd.min.js"></script>
-    <script src="resources/imagesloaded.pkgd.min.js"></script>
-    <script src="resources/bootstrap.min.js"></script>
-    <script src="resources/init.js"></script>
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/init.js"></script>
     <script>
         var $buoop = {};
         $buoop.ol = window.onload;
@@ -278,7 +265,7 @@
         }
     </script>
     <script>
-        var images = new Array('resources/background1.jpg', 'resources/background2.jpg', 'resources/background3.jpg');
+        var images = new Array('assets/img/background1.jpg', 'assets/img/background2.jpg', 'assets/img/background3.jpg');
         var l = images.length;
         var random_no = Math.floor(l * Math.random());
         document.getElementById("bg").src = images[random_no];

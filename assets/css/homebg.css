@@ -1,0 +1,12 @@
+.bg {
+    position: absolute;
+    top: -10;
+    height: 150%;
+    width: 100%;
+}
+video#bgvid {
+position: static; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover;
+}
